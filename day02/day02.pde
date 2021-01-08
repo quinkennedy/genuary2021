@@ -1,6 +1,6 @@
 //run, and then paste the output into 
 // https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro
-static int totalColumns = 6;
+static int totalColumns = 8;
 byte[] frame;
 
 
@@ -51,7 +51,7 @@ void printFrame(){
   }
   println();
   */
-  print(String.format("&#x1F6%02X",(byte)((frame[0]>>2)&0x3F)));
+  print(String.format("&#x1F4%02X",frame[0]));
   println("<br />");
 }
 
